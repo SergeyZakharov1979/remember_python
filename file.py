@@ -1,7 +1,5 @@
-lst = []
-sep1 = input()
-for i in range(3):
-    itm = input()
-    lst.append(itm)
-    
-print(lst[0], lst[1], lst[2], sep=sep1)
+a = int(input())
+V, S = a**3, 6*a**2
+
+print('Объем =', V)
+print('Площадь полной поверхности =', S)
