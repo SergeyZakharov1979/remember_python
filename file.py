@@ -1,5 +1,3 @@
-a = int(input())
-V, S = a**3, 6*a**2
+x = int(input())
 
-print('Объем =', V)
-print('Площадь полной поверхности =', S)
+print(x, 2 * x, 3 * x, 4 * x, 5 * x, sep='---')
