@@ -1,4 +1,4 @@
-sm = int(input())
-m = sm // 100
+n, k = int(input()), int(input())
+stud, bask = k // n, k % n
 
-print(m)
+print(stud, bask, sep='\n')
