@@ -1,3 +1,4 @@
-x = int(input())
+sm = int(input())
+m = sm // 100
 
-print(x, 2 * x, 3 * x, 4 * x, 5 * x, sep='---')
+print(m)
