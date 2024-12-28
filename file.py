@@ -1,4 +1,3 @@
-n, k = int(input()), int(input())
-stud, bask = k // n, k % n
+minutes = int(input())
 
-print(stud, bask, sep='\n')
+print(f'{minutes} мин - это {minutes // 60} час {minutes % 60} минут.')
