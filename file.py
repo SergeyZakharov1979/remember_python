@@ -1,4 +1,10 @@
-place = int(input())
-coupe = abs(-place // 4)
+num = int(input())
+a = num // 1000 % 10
+b = num // 100 % 10
+c = num // 10 % 10
+d = num % 10
 
-print(coupe)
+if a + d == b - c:
+    print('ДА')
+else:
+    print('НЕТ')
