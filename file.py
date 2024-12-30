@@ -1,10 +1,10 @@
-num = int(input())
-a = num // 1000 % 10
-b = num // 100 % 10
-c = num // 10 % 10
-d = num % 10
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+minimum = a
+if b < minimum:
+    minimum = b
+if c < minimum:
+    minimum = c
+if d < minimum:
+    minimum = d
 
-if a + d == b - c:
-    print('ДА')
-else:
-    print('НЕТ')
+print(minimum)
