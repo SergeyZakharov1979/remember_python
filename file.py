@@ -1,10 +1,5 @@
-a, b, c, d = int(input()), int(input()), int(input()), int(input())
-minimum = a
-if b < minimum:
-    minimum = b
-if c < minimum:
-    minimum = c
-if d < minimum:
-    minimum = d
-
-print(minimum)
+a, b, c = int(input()), int(input()), int(input())
+if (a + b > c) and (a + c > b) and (b + c > a):
+    print('YES')
+else:
+    print('NO')
