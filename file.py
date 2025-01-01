@@ -1,5 +1,15 @@
-a, b, c = int(input()), int(input()), int(input())
-if (a + b > c) and (a + c > b) and (b + c > a):
-    print('YES')
+a, b, oper = int(input()), int(input()), input()
+
+if oper == "+":
+    print(a + b)
+elif oper == "-":
+    print(a - b)
+elif oper == "*":
+    print(a * b)
+elif oper == "/":
+    if b == 0:
+        print('На ноль делить нельзя!')
+    else:
+        print(a / b)
 else:
-    print('NO')
+    print('Неверная операция')
