@@ -1,15 +1,16 @@
-a, b, oper = int(input()), int(input()), input()
+n = int(input())
 
-if oper == "+":
-    print(a + b)
-elif oper == "-":
-    print(a - b)
-elif oper == "*":
-    print(a * b)
-elif oper == "/":
-    if b == 0:
-        print('На ноль делить нельзя!')
+if n == 0:
+    print('зеленый')
+elif 1 <= n <= 10 or 19 <= n <= 28:
+    if n % 2 == 0:
+        print('черный')
     else:
-        print(a / b)
+        print('красный')
+elif 11 <= n <= 18 or 29 <= n <= 36:
+    if n % 2 == 0:
+        print('красный')
+    else:
+        print('черный')
 else:
-    print('Неверная операция')
+    print('ошибка ввода')
