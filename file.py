@@ -1,14 +1,13 @@
-a1, b1, a2, b2 = int(input()), int(input()), int(input()), int(input())
+s1, s2, s3 = input(), input(), input()
+short, long = s1, s1
 
-if a2 < a1:
-    a1, a2 = a2, a1
-    b1, b2 = b2, b1
+if len(s2) < len(s1):
+    short = s2
+else:
+    long = s2
+if len(s3) < len(s2) and len(s3) < len(s1):
+    short = s3
+elif len(s3) > len(s2) and len(s3) > len(s1):
+    long = s3
 
-if b1 < a2:
-    print('пустое множество')
-elif b1 == a2:
-    print(a2)
-elif a1 <= a2 and b1 <= b2:
-    print(a2, b1)
-elif a1 <= a2 and b1 >= b2:
-    print(a2, b2)
+print( short, long, sep='\n')
